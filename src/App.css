@@ -1,0 +1,53 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+
+}
+.media-card{
+  box-shadow: 10px 15px 15px rgba(0, 255, 255, 0.5);
+}
+.card-container{
+
+  
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  
+}
+.age {
+text-align:center;
+
+}
+.wrapper {
+  padding: 2rem;
+  background-image: linear-gradient(360deg, aqua, rgba(0, 255, 255, 0.378));
+ 
+}
+.btn-div{
+  position: relative;
+  
+}
+.btn{
+  /* padding: 2rem 1.5rem; */
+  padding: 10px;
+  display:block;
+  margin: 1rem 0;
+  background-color: aqua;
+  border: none;
+  color:white;
+  position: absolute;
+  right: 180px;
+  
+}
+
+.btn:active{
+  transition:padding 2rem 2s ease-in-out;
+  padding: 0.5rem;
+
+ 
+}
