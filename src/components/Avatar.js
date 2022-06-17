@@ -6,7 +6,7 @@ import location from "./assets/location.svg";
 import phone from "./assets/phone.svg";
 import "../App.css"
 export default function Avatars({ user }) {
-    React.useEffect(() => {console.log(user.dob.age)}, [user]);
+    React.useEffect(() => {console.log(user?.dob?.age)}, [user]);
     return (
         <div className="wrapper" >
             <Stack direction="column" spacing={2} >
