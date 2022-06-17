@@ -6,7 +6,7 @@ import location from "./assets/location.svg";
 import phone from "./assets/phone.svg";
 import "../App.css"
 export default function Avatars({ user }) {
-    console.log(user)
+    React.useEffect(() => {console.log(user.dob.age)}, [user]);
     return (
         <div className="wrapper" >
             <Stack direction="column" spacing={2} >
@@ -32,7 +32,7 @@ export default function Avatars({ user }) {
                     <p>{user?.location?.city} {user.location?.country}</p>
                 </div>
                 <div className="age">
-                    <p>Age: {user?.registered?.age}</p>
+                    <p>Age: {user?.dob?.age}</p>
                     <p>Register Date: {user?.registered?.date.slice(0,10)}</p>
                 </div>
             </Stack>
